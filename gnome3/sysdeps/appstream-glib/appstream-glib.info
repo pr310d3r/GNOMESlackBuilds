@@ -1,0 +1,5 @@
+PKGNAM="appstream-glib"
+VERSION="0.7.15"
+HOMEPAGE="https://github.com/hughsie/appstream-glib"
+DOWNLOAD="https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.15.tar.xz"
+MD5SUM="51f15108d6b9224f2ce2cf9364403b10"

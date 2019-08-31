@@ -1,0 +1,5 @@
+PKGNAM="file-roller"
+VERSION="3.32.1"
+HOMEPAGE="https://wiki.gnome.org/Apps/FileRoller"
+DOWNLOAD="https://download.gnome.org/sources/file-roller/3.32/file-roller-3.32.1.tar.xz"
+MD5SUM="8f1dd58419d7119d965a30efdcecff1a"

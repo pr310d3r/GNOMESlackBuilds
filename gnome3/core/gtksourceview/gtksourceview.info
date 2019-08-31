@@ -1,0 +1,5 @@
+PKGNAM="gtksourceview"
+VERSION="3.24.11"
+HOMEPAGE="https://wiki.gnome.org/Projects/GtkSourceView"
+DOWNLOAD="http://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz"
+MD5SUM="b748da426a7d64e1304f0c532b0f2a67"

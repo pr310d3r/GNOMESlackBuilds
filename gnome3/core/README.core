@@ -1,0 +1,20 @@
+Before giving your newly built GNOME desktop for a spin, do the following;
+
+* Disable hplip-systray. It causes a delay in startup as GNOME has no systray;
+Rename hplip-systray.desktop to hplip-systray.orig
+
+# mv /etc/xdg/autostart/hplip-systray.desktop \
+  /etc/xdg/autostart/hplip-systray.orig
+
+* Edit /etc/rc.d/rc.4. The --nodaemon option for gdm will cause gdm to crash.
+  Remove the option.
+
+Testing
+
+* Using startx
+
+Use xwmconfig to create your .xinitrc file.
+
+* Using gdm
+
+Edit /etc/inittab. Change your run level from 3 to 4.

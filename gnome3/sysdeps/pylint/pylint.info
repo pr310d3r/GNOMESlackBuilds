@@ -1,0 +1,5 @@
+PKGNAM="pylint"
+VERSION="2.1.1"
+HOMEPAGE="https://www.pylint.org"
+DOWNLOAD="https://github.com/PyCQA/pylint/archive/pylint-2.1.1.tar.gz"
+MD5SUM="64a5d6185a9fce2d1ccf5b32981bd784"

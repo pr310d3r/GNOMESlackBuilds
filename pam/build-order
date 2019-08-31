@@ -1,0 +1,7 @@
+krb5
+cracklib
+pam
+libpwquality
+shadow
+pam-krb5
+openssh (optional if you wish to run sshd)

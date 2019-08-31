@@ -1,0 +1,27 @@
+# GNOMESlackbuilds
+The SlackBuilds here will install GNOME 3.32 to
+Slackware-current. This install uses elogind
+instead of systemd.
+
+What does not work?
+* GDM using Xorg backend. It will kick you out.
+* GNOME on Xorg using GDM on Wayland. Again, you'll be kicked out
+* gnome-documents won't build
+
+What does work?
+* GDM on Wayland
+* XWayland works even on three (3) displays
+* GNOME on Wayland using GDM
+* GNOME on Xorg using startx
+
+What is the minimum Slackware installation required?
+
+* You can get away with package groups a, ap, d, k, l, n, t, tcl.
+* Install bash-completion from the extras group and gucharmap from the xap group.
+* Uninstall the glade3 package. It will conflict with the glade package you will build later.
+* Some packages included in the installation will have to be rebuilt to support components not originally supported by Slackware like PAM, elogind and Wayland.
+
+How to install a newly built package?
+* Use upgradepkg --install-new <new_package>. This way if there is an
+  existing package in the system it will be upgraded.
+ 

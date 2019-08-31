@@ -1,0 +1,5 @@
+PRGNAM="elogind"
+VERSION="241.3"
+HOMEPAGE="https://github.com/elogind/elogind"
+DOWNLOAD="https://github.com/elogind/elogind/archive/v241.3.tar.gz"
+MD5SUM="dbfebba271609fb5ea63073e2999466e"

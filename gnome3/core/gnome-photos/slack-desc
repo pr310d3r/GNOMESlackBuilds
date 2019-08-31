@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|' on
+# the right side marks the last column you can put a character in.  You must make
+# exactly 11 lines for the formatting to be correct.  It's also customary to
+# leave one space after the ':'.
+
+            |-----handy-ruler------------------------------------------------------|
+gnome-photos: GNOME Photos (access, organize and share your photos on GNOME)
+gnome-photos:
+gnome-photos: A simple application to access, organize and share your photos on
+gnome-photos: GNOME. It is meant to be a simple and elegant replacement for using a
+gnome-photos: file manager to deal with photos. Seamless cloud integration is
+gnome-photos: offered through GNOME Online Accounts.
+gnome-photos:
+gnome-photos: Homepage: https://wiki.gnome.org/Apps/Photos
+gnome-photos:
+gnome-photos:
+gnome-photos:

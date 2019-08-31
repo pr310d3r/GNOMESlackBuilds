@@ -1,0 +1,5 @@
+PKGNAM="uhttpmock"
+VERSION="0.5.1"
+HOMEPAGE="https://gitlab.com/groups/uhttpmock"
+DOWNLOAD=""https://gitlab.com/uhttpmock/uhttpmock/-/archive/0.5.1/uhttpmock-0.5.1.tar.gz
+MD5SUM="c26926f09d9f6cd4b51b5f79b8683181"

@@ -1,0 +1,5 @@
+PKGNAM="gtk+3"
+VERSION="3.24.10"
+HOMEPAGE="https://www.gtk.org/"
+DOWNLOAD="https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.10.tar.xz"
+MD5SUM="1b9f49a500a104a3e40f8d8eb7e6ce96"

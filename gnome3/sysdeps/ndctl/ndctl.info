@@ -1,0 +1,5 @@
+PKGNAM="ndctl"
+VERSION="65"
+HOMEPAGE="http://www.gnome.org/"
+DOWNLOAD="https://github.com/pmem/ndctl/archive/v65.tar.gz"
+MD5SUM="794c442ed391f3d2c59c4c58edb83775"

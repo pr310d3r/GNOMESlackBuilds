@@ -1,0 +1,12 @@
+* Disable PackageKit cron job as it may accidentally revert the installation to  Slackware stable (14.2)
+
+# chmod 644 /etc/cron.daily/packagekit-background.cron
+
+* Edit /etc/PackageKit/Slackware.conf
+
+Comment out the lines;
+
+[slackware]
+Mirror=http://mirrors.slackware.com/slackware/slackware64-14.2/
+Priority=patches;slackware64;extra;pasture;testing
+Blacklist=

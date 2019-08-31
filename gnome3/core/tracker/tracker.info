@@ -1,0 +1,5 @@
+PKGNAM="tracker"
+VERSION="2.2.2"
+HOMEPAGE="http://projects.gnome.org/tracker/"
+DOWNLOAD="http://download.gnome.org/sources/tracker/2.2/tracker-2.2.2.tar.xz"
+MD5SUM="2ec18c6f9e877abdfe1f50bac0e9eade"

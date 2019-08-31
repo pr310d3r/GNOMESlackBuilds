@@ -1,0 +1,5 @@
+PKGNAM="colord-gtk"
+VERSION="0.2.0"
+HOMEPAGE="http://www.freedesktop.org/software/colord/"
+DOWNLOAD="http://www.freedesktop.org/software/colord/releases/colord-gtk-0.2.0.tar.xz"
+MD5SUM="66d048803c8b89e5e63da4b461484933"

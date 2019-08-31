@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|' on
+# the right side marks the last column you can put a character in.  You must make
+# exactly 11 lines for the formatting to be correct.  It's also customary to
+# leave one space after the ':'.
+
+         |-----handy-ruler------------------------------------------------------|
+libdazzle: libdazzle (companion library to GObject and Gtk+)
+libdazzle:
+libdazzle: libdazzle provides various features that we wish were in the
+libdazzle: underlying library but cannot for various reasons. In most cases,
+libdazzle: they are wildly out of scope for those libraries. In other cases, our
+libdazzle: design isn't quite generic enough to work for everyone.
+libdazzle:
+libdazzle: Currently, the primary consumer of libdazzle is the Builder IDE.
+libdazzle:
+libdazzle:
+libdazzle:

@@ -1,0 +1,5 @@
+PKGNAM="wayland-protocols"
+VERSION="1.17"
+HOMEPAGE="http://wayland.freedesktop.org/"
+DOWNLOAD="http://wayland.freedesktop.org/releases/wayland-protocols-1.17.tar.xz"
+MD5SUM="55ddd5fdb02b73b9de9559aaec267315"

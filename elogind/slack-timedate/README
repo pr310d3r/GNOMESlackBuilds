@@ -1,0 +1,15 @@
+slack-timedate
+==============
+
+This program implements timedated1 interface from systemd what is
+required by GNOME Control Center for now.
+slack-timedate's purpose is to make it possible to enjoy full GNOME
+functionality on Slackware Linux which doesn't use systemd as its
+init-system.
+
+
+============
+Dependencies
+============
+glib
+dbus

@@ -1,0 +1,5 @@
+PKGNAM="libdvdcss"
+VERSION="1.4.2"
+HOMEPAGE="http://developers.videolan.org/libdvdcss/"
+DOWNLOAD="http://download.videolan.org/pub/libdvdcss/1.4.2/libdvdcss-1.4.2.tar.bz2"
+MD5SUM="7b74f2e142b13c9de6dc8d807ab912d4"

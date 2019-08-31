@@ -1,0 +1,5 @@
+PKGNAM="gst-plugins-ugly"
+VERSION="1.16.0"
+HOMEPAGE="https://gstreamer.freedesktop.org/modules/gst-plugins-ugly.html"
+DOWNLOAD="https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.16.0.tar.xz"
+MD5SUM="1ec343c58d4b17d682f7befa8453c11c"

@@ -1,0 +1,5 @@
+PKGNAM="gcab"
+VERSION="1.2"
+HOMEPAGE="http://live.gnome.org/gcab"
+DOWNLOAD="http://download.gnome.org/sources/gcab/1.2/gcab-1.2.tar.xz"
+MD5SUM="fa21e36cf3e50ee5a70c137d66d4dc3a"

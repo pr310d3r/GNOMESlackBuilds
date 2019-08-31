@@ -1,0 +1,41 @@
+* Edit /etc/pam.d/system-auth
+
+Change the line that says;
+
+-session    optional      pam_systemd.so
+
+to;
+
+-session    optional      pam_elogind.so
+
+* Create the file /etc/locale.conf. Put the following lines in it;
+ 
+LANG=en_US.UTF-8
+LC_MESSAGES=en_US.UTF-8
+
+Adjust for your locale.
+
+* Edit /usr/share/polkit-1/actions/org.freedesktop.login1.policy
+
+To allow shutdown from the GNOME desktop, find the line that says:
+
+<action id="org.freedesktop.login1.power-off">
+
+below that you will see a line that says;
+
+<allow_active>auth_admin_keep</allow_active>
+
+change "auth_admin_keep" to "yes", like so;
+
+<allow_active>yes</allow_active>
+
+To allow reboot from the GNOME desktop, find the line taht says:
+
+<action id="org.freedesktop.login1.reboot">
+
+below that you will see a line that says;
+
+<allow_active>auth_admin_keep</allow_active>
+
+change "auth_admin_keep" to "yes".
+

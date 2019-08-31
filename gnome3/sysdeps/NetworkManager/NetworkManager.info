@@ -1,0 +1,5 @@
+PKGNAM="NetworkManager"
+VERSION="1.18.1"
+HOMEPAGE="http://projects.gnome.org/NetworkManager/"
+DOWNLOAD="https://download.gnome.org/sources/NetworkManager/1.18/NetworkManager-1.18.1.tar.xz"
+MD5SUM="5d4dd0d5ac86f0b616880e44420b8eb5"

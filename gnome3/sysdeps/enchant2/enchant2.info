@@ -1,0 +1,5 @@
+PKGNAM="enchant2"
+VERSION="2.2.5"
+HOMEPAGE="https://github.com/AbiWord/"
+DOWNLOAD="https://github.com/AbiWord/enchant/releases/download/v2.2.5/enchant-2.2.5.tar.gz"
+MD5SUM="0344871b4770c4f9f549b05734881f4e"

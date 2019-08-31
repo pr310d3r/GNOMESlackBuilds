@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+              |-----handy-ruler------------------------------------------------------|
+slack-timedate: slack-timedate (Implementation of the systemd timedated1)
+slack-timedate:
+slack-timedate: This program implements systemd timedated1 interface required
+slack-timedate: by the GNOME Control Center. The purpose is to make it
+slack-timedate: possible to enjoy GNOME time and date funcionality on
+slack-timedate: Slackware Linux which does not use systemd as its
+slack-timedate: init-system.
+slack-timedate:
+slack-timedate: https://github.com/Dlackware/slack-timedate
+slack-timedate:
+slack-timedate:

@@ -1,0 +1,12 @@
+# geary-build-order
+geary
+# lollypop-build-order
+pysqlite
+pylast
+lollypop
+# simple-scan-build-order
+simple-scan
+# chrome-gnome-shell
+jq
+chrome-gnome-shell
+

@@ -1,0 +1,5 @@
+PKGNAM="webkitgtk"
+VERSION="2.24.3"
+HOMEPAGE="https://webkitgtk.org/"
+DOWNLOAD="https://webkitgtk.org/releases/webkitgtk-2.24.3.tar.xz"
+MD5SUM="e2a5bbd09a217eba096a2d1562143e35"

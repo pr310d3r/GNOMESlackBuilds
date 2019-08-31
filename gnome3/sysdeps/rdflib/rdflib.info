@@ -1,0 +1,5 @@
+PKGNAM="rdflib"
+VERSION="4.2.2"
+HOMEPAGE="https://github.com/RDFLib"
+DOWNLOAD="https://github.com/RDFLib/rdflib/archive/4.2.2.tar.gz"
+MD5SUM="1dd95c6443302d6a44a908e4af8fdc5d"

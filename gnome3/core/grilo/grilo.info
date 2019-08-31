@@ -1,0 +1,5 @@
+PKGNAM="grilo"
+VERSION="0.3.9"
+HOMEPAGE="https://wiki.gnome.org/Projects/Grilo"
+DOWNLOAD="http://download.gnome.org/sources/grilo/0.3/grilo-0.3.9.tar.xz"
+MD5SUM="b15f41787dff407f7e9df7b5db96006d"
