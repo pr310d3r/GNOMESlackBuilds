@@ -41,6 +41,7 @@ exempi
 libnice
 farstream
 lua
+geoclue
 glade (uninstall the glade3 package first)
 gnome-autoar
 gnome-common
