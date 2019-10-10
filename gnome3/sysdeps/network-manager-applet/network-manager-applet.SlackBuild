@@ -90,6 +90,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-more-warnings=no \
   --without-team \
   --without-selinux \
+  --with-libnm-gtk \
   --build=$ARCH-slackware-linux || exit 1
 
 make $NUMJOBS || make || exit 1

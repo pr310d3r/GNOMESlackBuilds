@@ -1,0 +1,52 @@
+--- a/meson.build	2019-09-29 15:28:30.552835665 +0800
++++ b/meson.build	2019-09-29 15:00:14.652805165 +0800
+@@ -123,8 +123,11 @@
+ enable_systemd_session = get_option('systemd_session') != 'disable'
+ use_systemd_session = get_option('systemd_session') == 'default'
+ enable_systemd_journal = get_option('systemd_journal')
++enable_elogind = get_option('elogind')
+ enable_consolekit = get_option('consolekit')
+-if enable_systemd or enable_consolekit
++assert(not (enable_systemd and enable_elogind), 'Can not support systemd and el
++ogind at once')
++if enable_systemd or enable_elogind or enable_consolekit
+   session_bin_deps += dependency('gio-unix-2.0', version: glib_req_version)
+ 
+   # Check for systemd
+@@ -147,6 +150,10 @@
+     endif
+ 
+     session_tracking = 'systemd'
++  elif enable_elogind
++     libelogind_dep = dependency('libelogind', version: '>= 239.4')
++     session_bin_deps += libelogind_dep
++     session_tracking = 'elogind'
+   endif
+ 
+   # Check for ConsoleKit
+@@ -156,7 +163,7 @@
+ 
+     session_bin_deps += dbus_glib_dep
+ 
+-    if enable_systemd
++    if enable_systemd or enable_elogind
+       session_tracking += ' (with fallback to ConsoleKit)'
+     else
+       session_tracking = 'ConsoleKit'
+@@ -166,7 +173,7 @@
+ if enable_systemd_session
+   assert(enable_systemd, 'Systemd support must be enabled when using systemd session management')
+ endif
+-config_h.set('HAVE_SYSTEMD', enable_systemd)
++config_h.set('HAVE_SYSTEMD', enable_systemd or enable_elogind)
+ config_h.set('ENABLE_SYSTEMD_SESSION', enable_systemd_session)
+ config_h.set('ENABLE_SYSTEMD_JOURNAL', enable_systemd_journal)
+ config_h.set('HAVE_CONSOLEKIT', enable_consolekit)
+--- a/meson_options.txt	2019-09-29 15:17:01.148823266 +0800
++++ b/meson_options.txt	2019-09-29 14:48:22.456792356 +0800
+@@ -1,4 +1,5 @@
+ option('deprecation_flags', type: 'boolean', value: false, description: 'use *_DISABLE_DEPRECATED flags')
++option('elogind', type: 'boolean', value: true, description: 'Use elogind')
+ option('session_selector', type: 'boolean', value: false, description: 'enable building a custom session selector dialog')
+ option('systemd', type: 'boolean', value: true, description: 'Use systemd')
+ option('systemd_session', type: 'combo', choices: ['disable', 'enable', 'default'], value: 'default', description: 'Whether to include systemd session support and use it by default')

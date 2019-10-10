@@ -8,13 +8,6 @@ to;
 
 -session    optional      pam_elogind.so
 
-* Create the file /etc/locale.conf. Put the following lines in it;
- 
-LANG=en_US.UTF-8
-LC_MESSAGES=en_US.UTF-8
-
-Adjust for your locale.
-
 * Edit /usr/share/polkit-1/actions/org.freedesktop.login1.policy
 
 To allow shutdown from the GNOME desktop, find the line that says:
@@ -39,3 +32,30 @@ below that you will see a line that says;
 
 change "auth_admin_keep" to "yes".
 
+* halt, poweroff, reboot under openrc
+
+The above commands does not work under openrc. The command used for openrc is
+
+"openrc-shutdown --poweroff now" to poweroff
+
+"openrc-shutdown --halt now" to halt
+
+"openrc-shutdown --reboot" to reboot
+
+loginctl (poweroff and reboot) does not work.
+
+To work around the issue, backup those 3 commands, like;
+
+# mv /sbin/halt /sbin/halt~
+
+# mv /sbin/poweroff /sbin/poweroff~
+
+# mv /sbin/reboot /sbin/reboot~
+
+Then create executable shell scripts in place of them. Example, for poweroff
+
+#!/bin/bash
+
+openrc-shutdown --poweroff now
+
+loginctl poweroff will now work

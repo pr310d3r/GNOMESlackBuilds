@@ -1,7 +1,9 @@
 * Reboot
 
 * Login
+Type "loginctl" and press ENTER, you should get;
 
-You should get the message;
+SESSION  UID USER          SEAT TTY
+     c1 1000 administrator      pts/0
 
-New session 1 for user <yourusername> 
+1 sessions listed.

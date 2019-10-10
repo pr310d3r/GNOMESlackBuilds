@@ -1,0 +1,5 @@
+PRGNAM="xdg-dbus-proxy"
+VERSION="0.1.2"
+HOMEPAGE="https://github.com/flatpak/xdg-dbus-proxy"
+DOWNLOAD="https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.2/xdg-dbus-proxy-0.1.2.tar.xz"
+MD5SUM="e889380bb8c07dce97b118cda11d09d5"

@@ -24,7 +24,7 @@
 # -----------------------------------------------------------------------------
 
 PKGNAM=mutter
-VERSION=${VERSION:-3.32.2}
+VERSION=${VERSION:-3.34.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -85,7 +85,9 @@ meson \
   -Dsysconfdir=/etc \
   -Dlocalstatedir=/var/lib \
   -Dmandir=/usr/man \
-  -Dbuildtype=release || exit 1
+  -Dbuildtype=release \
+  -Dprofiler=false \
+  -Dinstalled_tests=false || exit 1
 
 ninja || exit 1
 DESTDIR=$PKG ninja install || exit 1
@@ -104,6 +106,7 @@ cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.txz

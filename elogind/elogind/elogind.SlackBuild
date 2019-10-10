@@ -27,7 +27,7 @@
 
 PRGNAM=elogind
 VERSION=${VERSION:-241.3}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-3}
 TAG=${TAG:-_gsb}
 
 if [ -z "$ARCH" ]; then
@@ -91,8 +91,7 @@ meson setup \
     -Ddbuspolicydir=/etc/dbus-1/system.d \
     -Dpamlibdir=/usr/lib${LIBDIRSUFFIX}/security \
     -Dbashcompletiondir=/usr/share/bash-completions-completions \
-    -Dhalt-path=/sbin/halt \
-    -Dreboot-path=/sbin/reboot \
+    -Ddefault-hierarchy=unified \
     -Dman=false \
     -Dpam=true \
     -Dacl=true \
@@ -100,7 +99,7 @@ meson setup \
     -Ddebug=false \
     -Dsmack=true \
     -Dselinux=false \
-    -Ddefault-kill-user-processes=true \
+    -Ddefault-kill-user-processes=false \
     ..
 
   ninja
@@ -122,6 +121,10 @@ install -m 0644 ./src/systemd/_sd-common.h $PKG/usr/include
 # Add a rc script; Slackware does not support this out of the box:
 mkdir -p $PKG/etc/rc.d
 install -m 0755 $CWD/rc.elogind $PKG/etc/rc.d/rc.elogind.new
+
+# Add elogind initd script for openrc
+mkdir -p $PKG/etc/openrc/init.d
+install -m 0755 $CWD/elogind.initd $PKG/etc/openrc/init.d/elogind.new
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a LICENSE* NEWS README TODO $PKG/usr/doc/$PRGNAM-$VERSION

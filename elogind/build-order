@@ -1,3 +1,5 @@
 libseccomp
 elogind
-slack-timedate
+dbus
+libdaemon
+openrc-settingsd

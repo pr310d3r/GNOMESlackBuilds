@@ -1,8 +1,8 @@
 autoconf2
 mozjs60
+glib2 (needs version 2.62.0 at least. upgrade to latest if the version is lower)
 valgrind
 polkit
-libdaemon
 avahi
 libxkbcommon
 wayland
@@ -23,8 +23,9 @@ gnome-keyring
 graphviz
 vala
 gcab
+libstemmer
 appstream-glib
-gucharmap (install package from slackware xap)
+gucharmap
 NetworkManager
 network-manager-applet
 xorg-server
@@ -35,12 +36,14 @@ accountsservice
 autoconf-archive
 brasero
 check
+libgusb
 colord
 colord-gtk
 exempi
 libnice
 farstream
 lua
+geoclue
 glade (uninstall the glade3 package first)
 gnome-autoar
 gnome-common
@@ -53,11 +56,12 @@ gtkspell3
 hyphen
 unicode-character-database
 ibus
+libgee
 libdmapsharing
 libdvdcss
 libgit2
 libgit2-glib
-libmusicbrainz5
+libmusicbrainz
 liboauth
 libosinfo
 libquvi-scripts
@@ -69,6 +73,10 @@ telepathy-glib
 telepathy-logger
 telepathy-mission-control
 uhttpmock
+libwpe
+wpebackend-fdo
+bubblewrap
+xdg-dbus-proxy
 webkitgtk
 PackageKit
 libsass
@@ -76,3 +84,7 @@ sassc
 libdazzle
 polkit-gnome
 pipewire
+libical
+udisks2
+ostree
+flatpak

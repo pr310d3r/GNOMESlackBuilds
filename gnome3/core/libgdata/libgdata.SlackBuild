@@ -23,7 +23,7 @@
 #  Modified by Joselito Menguito to use meson
 
 PKGNAM=libgdata
-VERSION=${VERSION:-0.17.10}
+VERSION=${VERSION:-0.17.11}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 

@@ -1,0 +1,5 @@
+PRGNAM="vte"
+VERSION="0.58.1"
+HOMEPAGE="https://wiki.gnome.org/Apps/Terminal/VTE"
+DOWNLOAD="https://download.gnome.org/sources/vte/0.58/vte-0.58.1.tar.xz"
+MD5SUM="ba78671a32c523fa43b3782f031c699a"

@@ -1,0 +1,5 @@
+PRGNAM="openrc-settingsd"
+VERSION="1.0.1"
+HOMEPAGE="https://gitweb.gentoo.org/proj/openrc-settingsd.git"
+DOWNLOAD="https://gitweb.gentoo.org/proj/openrc-settingsd.git/snapshot/openrc-settingsd-1.0.1.tar.gz"
+MD5SUM="4399306fa7c8b3dd6db8ceff043042ca"

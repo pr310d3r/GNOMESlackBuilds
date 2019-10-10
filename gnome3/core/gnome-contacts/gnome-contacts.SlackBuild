@@ -80,13 +80,14 @@ cd build
 
 meson --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --mandir=/usr/man \
+  --buildtype=release \
   --sysconfdir=/etc || exit 1
 
 ninja
 DESTDIR=$PKG ninja install || exit 1
 
 cd ..
-
 
 # Compress and link manpages, if any:
 if [ -d $PKG/usr/man ]; then

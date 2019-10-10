@@ -77,6 +77,8 @@ cd build
 meson --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \
+  --mandir=/usr/man \
+  --buildtype=release \
   -Denable-vala=no || exit 1
 
 ninja

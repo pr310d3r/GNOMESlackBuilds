@@ -6,12 +6,12 @@
 # leave one space after the ':'.
 
     |-----handy-ruler------------------------------------------------------|
-ndctl: ndctl (oops)
+ndctl: ndctl 
 ndctl:
-ndctl: oops
+ndctl: Utility library for managing the libnvdimm (non-volatile memory
+ndctl: device) sub-system in the Linux kernel
 ndctl:
-ndctl:
-ndctl:
+ndctl: Homepage: https://github.com/pmem/ndctl
 ndctl:
 ndctl:
 ndctl:

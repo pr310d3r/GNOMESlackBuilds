@@ -21,7 +21,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PKGNAM=gnome-bluetooth
-VERSION=${VERSION:-3.32.1}
+VERSION=${VERSION:-3.34.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -73,6 +73,7 @@ cd build
 
 meson --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --mandir=/usr/man \
   --sysconfdir=/etc || exit 1
 
 ninja

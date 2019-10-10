@@ -1,5 +1,0 @@
-PKGNAM="flatpak"
-VERSION="1.4.2"
-HOMEPAGE="http://flatpak.org/"
-DOWNLOAD="https://github.com/flatpak/flatpak/releases/download/1.4.2/flatpak-1.4.2.tar.xz"
-MD5SUM="41264e10687d1ae2b2246f9de43c5692"

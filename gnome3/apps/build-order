@@ -1,12 +1,17 @@
 # geary-build-order
+gmime2
+ytnef
 geary
 # lollypop-build-order
 pysqlite
 pylast
 lollypop
 # simple-scan-build-order
+sane (install sane package from the xap group)
 simple-scan
 # chrome-gnome-shell
+oniguruma
 jq
 chrome-gnome-shell
-
+# gnome-tweaks
+gnome-tweaks

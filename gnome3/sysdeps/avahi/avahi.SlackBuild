@@ -100,7 +100,7 @@ CXXFLAGS="${SLKCFLAGS}" \
   --with-avahi-priv-access-group=netdev \
   --with-autoipd-user=avahi_autoipd \
   --with-autoipd-group=avahi_autoipd \
-  --with-systemdsystemunitdir=/lib/systemd/system \
+  --with-systemdsystemunitdir=no \
   --enable-compat-howl \
   --enable-compat-libdns_sd \
   --disable-mono \

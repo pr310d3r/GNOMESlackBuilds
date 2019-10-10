@@ -23,7 +23,7 @@
 PKGNAM=lollypop
 VERSION=${VERSION:-$(echo $PKGNAM-*.tar.?z* | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_jcm}
+TAG=${TAG:-_gsb}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -37,9 +37,9 @@ fi
 NUMJOBS=${NUMJOBS:-"-j4"}
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/jcm}
+TMP=${TMP:-/tmp/gsb}
 PKG=$TMP/package-$PKGNAM
-OUTPUT=${OUTPUT:-/var/cache/jcm}
+OUTPUT=${OUTPUT:-/var/cache/gsb}
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"

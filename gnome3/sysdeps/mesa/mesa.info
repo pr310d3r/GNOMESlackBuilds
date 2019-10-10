@@ -1,7 +1,7 @@
 PRGNAM="mesa"
-VERSION="19.1.2"
+VERSION="19.1.6"
 HOMEPAGE="https://mesa.freedesktop.org"
-DOWNLOAD="https://mesa.freedesktop.org/archive/mesa-19.1.2.tar.xz \
+DOWNLOAD="https://mesa.freedesktop.org/archive/mesa-19.1.7.tar.xz \
           https://mesa.freedesktop.org/archive/demos/mesa-demos-8.4.0.tar.bz2"
-MD5SUM="7cb3df6f46cfc08bba5245d091cd4524 \
+MD5SUM="cd1345c9b0d5121b860a0bdb20abc347 \
         6b65a02622765522176d00f553086fa3"

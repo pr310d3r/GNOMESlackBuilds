@@ -1,0 +1,5 @@
+PRGNAM="libical"
+VERSION="3.0.6"
+HOMEPAGE="https://github.com/libical"
+DOWNLOAD="https://github.com/libical/libical/releases/download/v3.0.6/libical-3.0.6.tar.gz"
+MD5SUM="463a59244c6767b8e67b29379405e297"

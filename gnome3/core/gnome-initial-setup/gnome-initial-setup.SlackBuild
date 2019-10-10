@@ -24,7 +24,7 @@
 # -----------------------------------------------------------------------------
 
 PKGNAM=gnome-initial-setup
-VERSION=${VERSION:-3.32.1}
+VERSION=${VERSION:-3.34.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -90,6 +90,7 @@ meson \
   -Dsysconfdir=/etc \
   -Dmandir=/usr/man \
   -Dlocalstatedir=/var/lib \
+  -Dsystemd=false \
   -Dbuildtype=release || exit 1
 
 ninja || exit 1

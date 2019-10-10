@@ -1,0 +1,5 @@
+PKGNAM="ostree"
+VERSION="2019.4"
+HOMEPAGE="https://github.com/ostreedev/ostree/"
+DOWNLOAD="https://github.com/ostreedev/ostree/releases/download/v2019.4/libostree-2019.4.tar.xz"
+MD5SUM="d5c0e2a0ed27ba4c2ce5290d1f8fb852"

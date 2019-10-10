@@ -24,7 +24,7 @@
 # -----------------------------------------------------------------------------
 
 PKGNAM=gnome-shell
-VERSION=${VERSION:-3.32.2}
+VERSION=${VERSION:-3.34.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -80,9 +80,7 @@ cd build
 meson --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \
-  -Dbrowser_plugin=true \
-  -Dsystemd=false \
-  -Dnetworkmanager=true || exit 1
+  --mandir=/usr/man || exit 1
 
 ninja
 DESTDIR=$PKG ninja install || exit 1

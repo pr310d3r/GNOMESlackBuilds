@@ -1,5 +1,5 @@
 PRGNAM="tracker-miners"
-VERSION="2.2.2"
+VERSION="2.3.0"
 HOMEPAGE="https://github.com/GNOME/tracker-miners"
-DOWNLOAD="https://download.gnome.org/sources/tracker-miners/2.2/tracker-miners-2.2.2.tar.xz"
-MD5SUM="a95842d4cbffb7230bde7cd98f6a9afe"
+DOWNLOAD="https://download.gnome.org/sources/tracker-miners/2.3/tracker-miners-2.3.0.tar.xz"
+MD5SUM="fd4fcfead449d03c311511042610682c"

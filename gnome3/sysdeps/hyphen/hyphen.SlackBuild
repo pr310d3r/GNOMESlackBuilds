@@ -27,8 +27,8 @@
 
 PKGNAM=hyphen
 VERSION=${VERSION:-2.8.8}
-BUILD=${BUILD:-2}
-TAG=${TAG:-_dlack}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_gsb}
 
 # Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
@@ -42,9 +42,9 @@ fi
 NUMJOBS=${NUMJOBS:-"-j4"}
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/dlackware}
+TMP=${TMP:-/tmp/gsb}
 PKG=$TMP/package-$PKGNAM
-OUTPUT=${OUTPUT:-/var/cache/dlackware}
+OUTPUT=${OUTPUT:-/var/cache/gsb}
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"

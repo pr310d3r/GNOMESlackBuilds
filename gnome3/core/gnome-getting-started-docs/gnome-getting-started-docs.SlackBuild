@@ -23,7 +23,7 @@
 # -----------------------------------------------------------------------------
 
 PKGNAM=gnome-getting-started-docs
-VERSION=${VERSION:-3.32.2}
+VERSION=${VERSION:-3.34.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 

@@ -25,7 +25,7 @@
 # Modified by Joselito Menguito to use elogind
 
 PKGNAM=gdm
-VERSION=${VERSION:-3.32.0}
+VERSION=${VERSION:-3.34.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -60,15 +60,6 @@ fi
 
 set -e # Exit on most errors
 
-# The following will add gdm user and group if it does not exist yet
-# Adapted from Willy Sudiarto Raharjo's colord.SlackBuild
-
-if ! getent group gdm 2>/dev/null ; then
-	groupadd -g 304 gdm
-elif ! passwd gdm 2>/dev/null ; then
-	useradd -d /var/lib/gdm -u 304 -g gdm -s /bin/false gdm
-fi
-
 rm -rf $TMP
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
@@ -98,6 +89,7 @@ CXXFLAGS="${SLKCFLAGS}" \
   --with-initial-vt=7 \
   --with-default-pam-config=redhat \
   --enable-wayland-support \
+  --enable-gdm-xsessions \
   --disable-systemd-journal \
   --without-plymouth \
   --with-tcp-wrappers \

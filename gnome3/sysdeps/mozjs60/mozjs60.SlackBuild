@@ -9,7 +9,7 @@
 # permitted provided that the following conditions are met:
 #
 # 1. Redistributions of this script must retain the above copyright
-#    notice, this list of conditions and the following disclaimer.  
+#    notice, this list of conditions and the following disclaimer.
 #
 #  THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS OR IMPLIED
 #  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
@@ -23,11 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mozjs60
-VERSION=${VERSION:-60.1.0}
+VERSION=${VERSION:-60.8.0}
 SRCNAM=mozjs-${VERSION}
 DIRNAM=mozjs-${VERSION}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_dlack}
+TAG=${TAG:-_gsb}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -38,9 +38,9 @@ if [ -z "$ARCH" ]; then
 fi
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/dlackware}
+TMP=${TMP:-/tmp/gsb}
 PKG=$TMP/package-$PRGNAM
-OUTPUT=${OUTPUT:-/var/cache/dlackware}
+OUTPUT=${OUTPUT:-/var/cache/gsb}
 CWD1=$CWD/patches
 
 if [ "$ARCH" = "i586" ]; then

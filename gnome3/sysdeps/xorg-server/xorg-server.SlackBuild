@@ -94,7 +94,7 @@ CFLAGS="$SLKCFLAGS" \
   --with-int10=x86emu \
   --with-default-font-path="${DEF_FONTPATH}" \
   --with-module-dir=/usr/lib${LIBDIRSUFFIX}/xorg/modules \
-  --with-os-name="Slackware 15.0 - Dlackware 3.32" \
+  --with-os-name="Slackware 15.0 - GSB 3.34" \
   --with-os-vendor="Slackware Linux Project" \
   --with-xkb-path=/etc/X11/xkb \
   --with-xkb-output=/var/lib/xkb \
@@ -135,7 +135,7 @@ find $PKG -print0 | xargs -0 file | grep "current ar archive" | grep ELF | cut -
 # Create the configuration directories for xorg-server 1.9.x
 mkdir -p $PKG/etc/X11/xorg.conf.d $PKG/usr/share/X11/xorg.conf.d
 
-# Create a sample keyboard layout 
+# Create a sample keyboard layout
 # Enable zapping by default
 cat << EOF > $PKG/usr/share/X11/xorg.conf.d/90-keyboard-layout.conf
 Section "InputClass"
@@ -169,14 +169,14 @@ EndSection
 #  Many desktop environments, including KDE and Xfce, have their own methods to
 #  configure keyboard layouts and such if you'd like to use them.
 #
-#  If you prefer to use the "old" way of configuring keyboards (without input 
-#  device hotplugging), then you'll need to add the following lines to the 
+#  If you prefer to use the "old" way of configuring keyboards (without input
+#  device hotplugging), then you'll need to add the following lines to the
 #  ServerFlags section of /etc/X11/xorg.conf:
 #    Option   "AllowEmptyInput"     "false"
 #    Option   "AutoAddDevices"      "false"
 #    Option   "AutoEnableDevices"   "false"
 #  Alternatively, you can break this up into separate "stubs" in the xorg.conf.d/
-#  directory, but that's your call.  Assuming you elect to keep a monolithic 
+#  directory, but that's your call.  Assuming you elect to keep a monolithic
 #  /etc/X11/xorg.conf file, you can now edit the Keyboard section as usual.
 
 EOF

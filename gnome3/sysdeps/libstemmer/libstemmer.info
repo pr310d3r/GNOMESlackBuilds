@@ -1,0 +1,5 @@
+PRGNAM="libstemmer"
+VERSION="0+713"
+HOMEPAGE="https://snowballstem.org/"
+DOWNLOAD="https://github.com/snowballstem/snowball.git"
+MD5SUM=""

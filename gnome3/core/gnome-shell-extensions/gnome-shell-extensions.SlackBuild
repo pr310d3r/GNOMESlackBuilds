@@ -81,6 +81,8 @@ cd build
 meson --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \
+  --mandir=/usr/man \
+  --buildtype=release \
   -Dextension_set=all || exit 1
 
 ninja

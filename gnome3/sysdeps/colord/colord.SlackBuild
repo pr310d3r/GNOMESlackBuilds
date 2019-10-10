@@ -36,22 +36,6 @@ if [ -z "$ARCH" ]; then
   esac
 fi
 
-# The bailout script is from Willy Sudiarto Raharjo's SBo SlackBuild script
-
-bailout() {
-  printf "This requires a \"colord\" user and group.\n"
-  printf "groupadd -g 303 colord\n"
-  printf "useradd -d /var/lib/colord -u 303 -g colord -s /bin/false colord"
-  exit 1
-}
-
-if ! getent group colord 2>/dev/null 1>/dev/null ; then
-  bailout
-elif ! getent passwd colord 2>/dev/null 1>/dev/null ; then
-  bailout
-fi
-# End of bailout
-
 CWD=$(pwd)
 TMP=${TMP:-/tmp/gsb}
 PKG=$TMP/package-$PKGNAM

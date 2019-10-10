@@ -1,5 +1,5 @@
 PKGNAM="gnome-maps"
-VERSION="3.32.2"
+VERSION="3.34.1"
 HOMEPAGE="http://www.gnome.org"
-DOWNLOAD="http://download.gnome.org/sources/gnome-maps/3.32/gnome-maps-3.32.2.tar.xz"
-MD5SUM="c768b89ec2d2768e98c91773c49c99ff"
+DOWNLOAD="http://download.gnome.org/sources/gnome-maps/3.34/gnome-maps-3.34.1.tar.xz"
+MD5SUM="dc6cdfbb6fa7a8bfea266f058ab11df0"

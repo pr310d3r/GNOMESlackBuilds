@@ -89,7 +89,7 @@ PPPD=$(echo /usr/lib${LIBDIRSUFFIX}/pppd/?.?.? | rev | cut -f 1 -d / | rev)
 sed -i -e '/^Alias=/aAlias=network.service' data/${PKGNAM}.service.in || exit 1
 
 # Apply bugfix patches from upstream git:
-for dfile in $CWD/patches/* ; do 
+for dfile in $CWD/patches/* ; do
   cat $dfile | patch -p1 --verbose || exit 1
 done
 
@@ -100,7 +100,7 @@ automake
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-./autogen.sh \
+./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \

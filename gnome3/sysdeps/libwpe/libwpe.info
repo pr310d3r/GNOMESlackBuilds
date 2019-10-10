@@ -1,0 +1,5 @@
+PRGNAM="libwpe"
+VERSION="1.4.0"
+HOMEPAGE="https://github.com/WebPlatformForEmbedded/libwpe"
+DOWNLOAD="https://github.com/WebPlatformForEmbedded/libwpe/releases/download/1.4.0/libwpe-1.4.0.tar.xz"
+MD5SUM="4b6dbaa2d40408975fe1be935367b4e8"

@@ -79,7 +79,9 @@ cd build
 
 meson --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --sysconfdir=/etc || exit 1
+  --mandir=/usr/man \
+  --sysconfdir=/etc \
+  --buildtype=release || exit 1
 
 ninja
 DESTDIR=$PKG ninja install || exit 1

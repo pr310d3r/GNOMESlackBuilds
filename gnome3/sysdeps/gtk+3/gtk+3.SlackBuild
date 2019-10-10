@@ -39,7 +39,7 @@ if [ -z "$ARCH" ]; then
 fi
 
 CWD=$(pwd)
-TMP=${TMP:-/tmp/hsb}
+TMP=${TMP:-/tmp/gsb}
 PKG=$TMP/package-gtk3
 OUTPUT=${OUTPUT:-/var/cache/gsb}
 
@@ -175,7 +175,7 @@ cp -a \
 find $PKG/usr/doc/gtk+3-$VERSION/ -type f -exec chmod 644 {} \;
 chown -R root:root $PKG/usr/doc/gtk+3-$VERSION
 
-mkdir -p $PKG/install 
+mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 cat $CWD/slack-desc > $PKG/install/slack-desc
 

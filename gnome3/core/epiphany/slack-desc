@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+        |-----handy-ruler-----------------------------------------------------|
+epiphany: epiphany (GNOME Web Browser)
+epiphany:
+epiphany: Epiphany is the web browser for the GNOME desktop and for elementary
+epiphany: OS, based on the popular WebKit engine. It offers a simple, clean,
+epiphany: beautiful view of the web featuring first-class GNOME and Pantheon
+epiphany: desktop integration.
+epiphany:
+epiphany: Homepage: https://wiki.gnome.org/Apps/Web/
+epiphany:
+epiphany:
+epiphany:

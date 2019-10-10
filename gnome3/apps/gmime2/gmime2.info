@@ -1,0 +1,5 @@
+PRGNAM="gmime2"
+VERSION="2.6.23"
+HOMEPAGE="https://github.com/jstedfast/gmime"
+DOWNLOAD="https://download.gnome.org/sources/gmime/2.6/gmime-2.6.23.tar.xz"
+MD5SUM="247072236d84bd0fbbff299d69bdf333"

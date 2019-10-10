@@ -22,7 +22,7 @@
 # -----------------------------------------------------------------------------
 
 PKGNAM=libgit2
-VERSION=${VERSION:-0.28.2}
+VERSION=${VERSION:-0.28.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -55,6 +55,8 @@ else
 fi
 
 set -e # Exit on most errors
+
+mv v$VERSION.tar.gz $PKGNAM-$VERSION.tar.gz
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT

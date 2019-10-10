@@ -1,5 +1,5 @@
 PKGNAM="gnome-clocks"
-VERSION="3.32.0"
+VERSION="3.34.0"
 HOMEPAGE="http://www.gnome.org"
-DOWNLOAD="http://download.gnome.org/sources/gnome-clocks/3.32/gnome-clocks-3.32.0.tar.xz"
-MD5SUM="abf6d6ee2ef6973c8785cfa77ef42dfb"
+DOWNLOAD="http://download.gnome.org/sources/gnome-clocks/3.34/gnome-clocks-3.34.0.tar.xz"
+MD5SUM="cea9d93262f97b1b9c9749bda0c44a5e"

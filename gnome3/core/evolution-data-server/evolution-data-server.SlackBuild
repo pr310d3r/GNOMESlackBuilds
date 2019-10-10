@@ -20,7 +20,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PKGNAM=evolution-data-server
-VERSION=${VERSION:-3.32.4}
+VERSION=${VERSION:-3.34.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gsb}
 
@@ -73,12 +73,9 @@ CXXFLAGS="$SLKCFLAGS" \
 cmake -DCMAKE_INSTALL_PREFIX=/usr   \
       -DLIB_SUFFIX=64               \
       -DENABLE_INTROSPECTION=ON     \
-      -DENABLE_UOA=OFF              \
       -DENABLE_VALA_BINDINGS=ON     \
       -DENABLE_INSTALLED_TESTS=ON   \
       -DENABLE_GOOGLE=ON            \
-      -DENABLE_GOOGLE_AUTH=ON       \
-      -DWITH_LDAP=ON                \
       -DENABLE_INTROSPECTION=ON
 
 make $NUMJOBS
