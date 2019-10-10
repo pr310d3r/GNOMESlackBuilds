@@ -82,5 +82,11 @@ gnome-character
 gnome-calendar
 gnome-weather
 gnome-maps
+<<<<<<< HEAD
+=======
+gnome-weather
+bubblewrap
+ostree
+>>>>>>> origin
 gnome-software
 gnome-initial-setup

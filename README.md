@@ -1,2 +1,2 @@
 # GNOMESlackBuilds
-SlackBuilds to install GNOME3 on Slackware-current
+SlackBuilds to install GNOME 3.32 on Slackware-current
