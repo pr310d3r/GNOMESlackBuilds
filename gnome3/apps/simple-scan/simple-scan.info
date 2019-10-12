@@ -1,5 +1,5 @@
 PRGNAM="simple-scan"
-VERSION="3.34.0"
+VERSION="3.34.1"
 HOMEPAGE="https://github.com/GNOME/simple-scan"
-DOWNLOAD="https://download.gnome.org/sources/simple-scan/3.34/simple-scan-3.34.0.tar.xz"
-MD5SUM="e124a2110dfa5343806323baac57f997"
+DOWNLOAD="https://download.gnome.org/sources/simple-scan/3.34/simple-scan-3.34.1.tar.xz"
+MD5SUM="e0847837d0fb961e2be56df3a0d693ff"
